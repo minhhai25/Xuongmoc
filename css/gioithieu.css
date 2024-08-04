@@ -1,12 +1,12 @@
-html{
-    background-color: #F3F3F3;
+html {
+  background-color: #f3f3f3;
 }
 .banner {
   background-image: url(../AnhCat/AnhCatTC-20240709T030502Z-001/AnhCatTC/lienhe-bg.jpg);
-   background-size: cover center;
+  background-size: cover center;
   background-repeat: no-repeat;
   position: relative;
-   height: 20rem;
+  height: 20rem;
 }
 .banner::after {
   position: absolute;
@@ -25,32 +25,34 @@ html{
   text-align: center;
   padding: 4rem;
 }
-.banner_content>img{
+.banner_content > img {
   filter: brightness(0) invert(1);
 }
 #body {
-  position: relative;
   margin-top: auto;
 }
 #body > .container {
+  position: relative;
+}
+.thong-tin-gt {
   background-color: white;
   position: absolute;
-  top:-3rem;
-  left: 8rem;
+  top: -3rem;
+  left: 0rem;
   padding: 1rem 1rem;
 }
-h1{
+h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
-p{
-    font-size: 1rem;
+p {
+  font-size: 1rem;
 }
 .title > h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
-  margin: 2rem auto  ;
+  margin: 2rem auto;
   position: relative;
   width: fit-content;
 }
@@ -64,47 +66,71 @@ p{
   left: 50%;
   transform: translateX(-50%);
 }
-.content>img {
-    width: 30%;
+.content {
+  display: flex;
+}
+.content > img {
+  width: 30%;
 }
 .content__info {
-    width: 50%;
+  width: 50%;
 }
-.tamnhin>img{
-    width: 100%;
-    margin: 0 auto;
-    height: 20rem;
+.tamnhin > img {
+  width: 100%;
+  margin: 0 auto;
+  height: 20rem;
 }
-.col-6>img{
-    width: 20%;
-    height: 50%;
+.col-6 > img {
+  width: 20%;
+  height: 50%;
 }
 .box-content-info.col-6.d-flex {
-    
-    border: 3px solid #bd945f;
-    width: 45%;
-    margin: auto;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
+  border: 3px solid #bd945f;
+  width: 45%;
+  margin: auto;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
 }
-.sumenh{
-    width: 92%;
-    margin: 0rem auto;
-
+.sumenh {
+  width: 92%;
+  margin: 0rem auto;
 }
-.content-mission>h3{
-    color: #bd945f;
-     padding: 0 10px;
+.content-mission > h3 {
+  color: #bd945f;
+  padding: 0 10px;
 }
-.content-mission>p{
-    padding: 10px ;
-    font-weight: 500;
+.content-mission > p {
+  padding: 10px;
+  font-weight: 500;
 }
 footer {
-    background-color: #363636;
-    color: white;
-    position: absolute;
-    top: 125rem;
-    left: 0;
-    right: 0;
+  background-color: #363636;
+  color: white;
+  position: absolute;
+  top: 125rem;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 756px) {
+  .content-mission > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 968px) {
+  .content {
+    display: unset !important;
+  }
+  .thong-tin-gt {
+    text-align: center;
+  }
+  .content__info {
+    width: 100%;
+    text-align: start;
+  }
+}
+@media (max-width: 480px) {
 }

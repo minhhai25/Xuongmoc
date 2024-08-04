@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/sanpham.css" />
-
+<link rel="stylesheet" href="../css/font.css">
     <!-- thư viện slide -->
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
@@ -23,20 +23,59 @@
     />
   </head>
   <body>
-    <header>
+     <header>
       <div class="container">
         <div class="d-flex justify-content-between">
+          <label for="nav-mobile-input" id="nav-bar-btn">
+            <i class="fa-solid fa-bars"></i
+          ></label>
+          <input
+            type="checkbox"
+            name=""
+            class="nav-input"
+            id="nav-mobile-input"
+          />
           <div class="logo">
             <img src="../AnhCat/logo.png" alt="" />
           </div>
-          <nav id="header-nav">
+          <nav class="nav-pc" id="header-nav">
             <ul class="d-flex justify-content-between h-100 align-items-center">
-              <li><a href="../Html/index.html"> Trang chủ</a></li>
+              <li><a href="./index.html"> Trang chủ</a></li>
               <li><a href="./Gioithieu.html">giới thiệu</a></li>
               <li><a href="./Sanpham.html">sản phẩm</a></li>
               <li><a href="./Tintuc.html">tin tức </a></li>
               <li><a href="./Doitac.html">đối tác </a></li>
               <li><a href="./Lienhe.html">liên hệ</a></li>
+            </ul>
+          </nav>
+          <div class="nav-btn"><i class="fa-solid fa-bars"></i></div>
+          <label for="nav-mobile-input" class="nav__overlay"></label>
+          <!-- nav-mobile -->
+          <nav class="nav-mobile" id="header-nav">
+            <label for="nav-mobile-input" class="nav__mobile-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="nav-mobile-list">
+              <li>
+                <a class="nav-mobile-link" href="./index.html"> Trang chủ</a>
+              </li>
+              <li>
+                <a class="nav-mobile-link" href="./Gioithieu.html"
+                  >giới thiệu</a
+                >
+              </li>
+              <li>
+                <a class="nav-mobile-link" href="./Sanpham.html">sản phẩm</a>
+              </li>
+              <li>
+                <a class="nav-mobile-link" href="./Tintuc.html">tin tức </a>
+              </li>
+              <li>
+                <a class="nav-mobile-link" href="./Doitac.html">đối tác </a>
+              </li>
+              <li>
+                <a class="nav-mobile-link" href="./Lienhe.html">liên hệ</a>
+              </li>
             </ul>
           </nav>
         </div>
