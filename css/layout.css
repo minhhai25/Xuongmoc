@@ -13,6 +13,7 @@ a {
 }
 header {
   padding: 1.1rem;
+  background-color: white;
 }
 #header-nav ul li a {
   text-transform: uppercase;

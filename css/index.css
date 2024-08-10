@@ -229,6 +229,10 @@ section.body {
   text-align: start;
   padding-left: 0.7rem;
 }
+.container-lg.row {
+    padding-top: 2rem;
+    padding-left: 10rem;
+}
 
 img.aos-init.aos-animate {
   transform: translateZ(12);
@@ -264,11 +268,14 @@ input#email {
 .box-form {
   margin-top: 10rem;
 }
+.fade-in-box {
+  opacity: 0; /* Ẩn phần tử ban đầu */
+  transform: translateY(50px); /* Di chuyển phần tử xuống 50px */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 /* responsive */
 @media (min-width: 1400px) {
-  section#productcate {
-    display: none;
-  }
+ 
 
   /* .container.aboutme{
     display: unset ;
