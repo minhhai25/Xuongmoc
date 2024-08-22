@@ -1,9 +1,14 @@
 * {
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-  font-family: go;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 20px;
+    font-family: Gotham-Medium;
+    
+    
+}
+p{
+  font-size: 0.8rem;
 }
 a {
   text-decoration: none;

@@ -9,10 +9,17 @@ img.d-block.w-100 {
   left: 65%;
   top: 50%;
 }
+
+button.mua {
+    border: none;
+    padding: 0.8rem;
+    background-color: white;
+    color: #2C2E53;
+}
 .title > h3 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
  /* margin-bottom: 2rem ;  */
   position: relative;
   width: fit-content;
@@ -20,8 +27,9 @@ img.d-block.w-100 {
   /* padding-top: 2rem; */
 }
 div.them >a{
-    color: black;
-    font-size: 1.5rem;
+    color: #2C2E53;
+    font-size: 1rem;
+    
  
 }
 .them{
@@ -44,9 +52,9 @@ div.them >a{
 }
 .col-md-3>img{
     width: 100%;
-    height: 15rem;
+    height: 12rem;
 }
-.col-md-3{
+.fade-in-box>.col-md-3{
     text-align: center;
 }
 .col-md-3>h5{

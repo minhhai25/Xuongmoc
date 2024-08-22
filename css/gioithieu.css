@@ -3,7 +3,7 @@ html {
 }
 .banner {
   background-image: url(../AnhCat/AnhCatTC-20240709T030502Z-001/AnhCatTC/lienhe-bg.jpg);
-  background-size: cover center;
+  background-size: cover ;
   background-repeat: no-repeat;
   position: relative;
   height: 20rem;
@@ -24,15 +24,18 @@ html {
   height: 5rem;
   text-align: center;
   padding: 4rem;
+  /* font-family: go; */
 }
 .banner_content > img {
   filter: brightness(0) invert(1);
 }
 #body {
   margin-top: auto;
+  background-color: #F3F3F3;
 }
 #body > .container {
   position: relative;
+  height: 85rem;
 }
 .thong-tin-gt {
   background-color: white;
@@ -44,10 +47,11 @@ html {
 h1 {
   text-transform: uppercase;
   font-weight: 700;
+      margin-top: 1rem;
 }
-p {
+/* p {
   font-size: 1rem;
-}
+} */
 .title > h3 {
   text-transform: uppercase;
   font-weight: 700;
@@ -106,10 +110,7 @@ p {
 footer {
   background-color: #363636;
   color: white;
-  position: absolute;
-  top: 125rem;
-  left: 0;
-  right: 0;
+ 
 }
 @media (max-width: 756px) {
   .content-mission > p {
