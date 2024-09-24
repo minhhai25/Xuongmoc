@@ -1,7 +1,3 @@
-body {
-  background-color: #f3f3f3;
-}
-
 .banner {
   background-image: url(../AnhCat/banner.jpg);
   background-position: center;
@@ -10,14 +6,16 @@ body {
 }
 h1 {
   text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 1000;
+  font-size: 2.5rem;
+  /* font-weight: 1000; */
+  font-family: Gotham-Ultra;
 }
 h2 {
   text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 1000;
+  font-size: 2.5rem;
+  /* font-weight: 1000; */
   color: #bd945f;
+  font-family: Gotham-Ultra;
 }
 .container > p {
   width: 40%;
@@ -27,6 +25,12 @@ button {
   color: white;
   border: none;
 }
+button.slick-arrow.slick-next::before,
+button.slick-arrow.slick-prev::before {
+  color: #bd945f;
+  font-size: 1.5rem;
+}
+
 button.p-2 > a {
   color: white;
 }
@@ -97,17 +101,10 @@ p.dacdiem {
 }
 #aboutus {
   background-image: url(../AnhCat/AnhCatTC-20240709T030502Z-001/AnhCatTC/ve-chung-toi/bg-about-us.jpg);
-  /* height: 54rem;
-  position: relative; */
 }
-/* #aboutus::after {
-  position: absolute;
-  content: "";
-  background-color: black;
-  width: 100%;
-  height: 54rem;
-  opacity: 0.5;
-} */
+h4.p-3.pt-0 {
+  margin-bottom: 0;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -154,7 +151,7 @@ p.dacdiem {
 }
 .aboutme_infor > h4 {
   text-transform: uppercase;
-     font-size: 1rem;
+  font-size: 1rem;
 }
 .col-md-3.px-2 > img {
   width: 100%;
@@ -169,6 +166,10 @@ p.dacdiem {
 .col-md-6 > img {
   width: 4rem;
   height: 4rem;
+  margin-right: 1rem;
+}
+.ttnoibat__content > h5 {
+  padding-top: 1rem;
 }
 .container.row {
   padding: 0 2.5rem;
@@ -214,9 +215,9 @@ p.dacdiem {
 }
 .tintuc_them > a {
   padding: 0.5rem;
-  margin: 1rem;
-  color: white;
-  background-color: #bd945f;
+  /* margin: 1rem; */
+  color: #bd945f;
+  background-color: white;
 }
 .tintuc > img {
   width: 90%;
@@ -306,9 +307,12 @@ input#email {
 }
 @media (max-width: 756px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  section#productcate {
+  section#productcate,
+  section#Spnoibat {
     display: none;
+    background-color: #f3f3f3;
   }
+
   .d-flex.col-md-6.col-sm-12 {
     width: 100%;
   }
@@ -345,9 +349,32 @@ input#email {
     display: none;
   }
 }
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
+/* thêm css giỏ hàng */
+
+i.fa-solid.fa-cart-shopping {
+  padding-right: 2rem;
 }
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
+.product {
+  position: relative;
+}
+.product:hover::after {
+  content: ""; /* Thêm một lớp phủ */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.addcart {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 40%;
+  display: none;
+}
+.product:hover .addcart {
+  display: block;
 }
